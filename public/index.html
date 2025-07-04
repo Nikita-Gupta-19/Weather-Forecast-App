@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><img src="sun.png" alt="Weather icon" width="24" style="vertical-align:middle; margin-right:6px;"> Weather App</h1>
+            <div class="controls">
+                <button id="locationBtn" class="control-btn">📍 My Location</button>
+                <button id="unitToggle" class="control-btn">°C | °F</button>
+                <button id="themeToggle" class="control-btn">🌙</button>
+            </div>
+        </header>
+        
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name..." />
+                <button id="searchBtn">Search</button>
+            </div>
+            
+            <div id="searchHistory" class="search-history hidden">
+                <h3 align="left">Recent Searches</h3>
+                <div id="historyList"></div>
+            </div>
+            
+            <div id="favorites" class="favorites hidden">
+                <h3 align="left">⭐ Favorites</h3>
+                <div id="favoritesList"></div>
+            </div>
+        </div>
+        
+        <div id="weatherCard" class="weather-card hidden">
+            <div class="weather-header">
+                <div class="city-info">
+                    <h2 id="cityName"></h2>
+                    <button id="favoriteBtn" class="favorite-btn"><img src="star.png" alt="Weather icon" width="24" style="vertical-align:middle; margin-right:6px;"></button>
+                </div>
+                <img id="weatherIcon" src="" alt="Weather icon" />
+            </div>
+            
+            <div class="current-weather">
+                <div class="temperature">
+                    <span id="temp"></span><span id="tempUnit">°C</span>
+                </div>
+                <div class="feels-like">
+                    Feels like <span id="feelsLike"></span><span id="feelsLikeUnit">°C</span>
+                </div>
+                <div class="description" id="description"></div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail">
+                    <span class="label">Humidity</span>
+                    <span id="humidity"></span> %
+                </div>
+                <div class="detail">
+                    <span class="label">Wind Speed</span>
+                    <span id="windSpeed"></span> <span class="wind-unit">m/s</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Pressure</span>
+                    <span id="pressure"></span> hPa
+                </div>
+                <div class="detail">
+                    <span class="label">Visibility</span>
+                    <span id="visibility"></span> km
+                </div>
+            </div>
+            
+            <div class="sun-times">
+                <div class="sun-time">
+                    <span class="label">🌅 Sunrise</span>
+                    <span id="sunrise"></span>
+                </div>
+                <div class="sun-time">
+                    <span class="label">🌅 Sunset</span>
+                    <span id="sunset"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="forecastCard" class="forecast-card hidden">
+            <h3>Weekly Forecast</h3>
+            <div id="forecastList" class="forecast-list"></div>
+        </div>
+        
+        <div id="errorMessage" class="error hidden"></div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
