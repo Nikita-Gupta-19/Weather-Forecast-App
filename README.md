@@ -3,7 +3,7 @@
 A sleek and responsive Weather App built using HTML, CSS, JavaScript, and OpenWeatherMap API.  
 It provides current weather data and a 5-day forecast with a beautiful gradient UI and animated weather cards.
 
-[**🌐 Live Demo**]()
+[**🌐 Live Demo**](https://weather-forecast-app-domj.onrender.com/)
 
 ---
 
@@ -64,10 +64,16 @@ It provides current weather data and a 5-day forecast with a beautiful gradient 
 ## 🖼️ Screenshots
 
 <p float="left">
-  <img src="screenshots/main-ui.png" width="500"/>
-  <img src="screenshots/forecast-scroll.png" width="500"/>
-  <img src="screenshots/rainy-gradient.png" width="500"/>
-  <img src="screenshots/city-search.png" width="500"/>
+  <img src="Screenshots/Screenshot (468).png" width="500"/>
+  <img src="Screenshots/Screenshot (469).png" width="500"/>
+  <img src="Screenshots/Screenshot (470).png" width="500"/>
+  <img src="Screenshots/Screenshot (471).png" width="500"/>
+  <img src="Screenshots/Screenshot (472).png" width="500"/>
+  <img src="Screenshots/Screenshot (473).png" width="500"/>
+  <img src="Screenshots/Screenshot (474).png" width="500"/>
+  <img src="Screenshots/Screenshot (475).png" width="500"/>
+  <img src="Screenshots/Screenshot (476).png" width="500"/>
+  <img src="Screenshots/Screenshot (477).png" width="500"/>
 </p>
 
 ---
